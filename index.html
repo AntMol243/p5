@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figure 70 Henri Chopin</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f5f0;
+      font-family: "Courier New", monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    p {
+      font-size: 12px;
+      color: #333;
+      margin-bottom: 1rem;
+      text-align: left;
+      width: 80%;
+    }
+
+    .poeme {
+      position: relative;
+      text-align: center;
+      line-height: 1.4em;
+      font-size: 15px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .poeme:hover {
+      transform: translateY(-5px) scale(1.02);
+      filter: brightness(1.2);
+    }
+
+    .poeme::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, #a90a14, #ea6053, #a90a14);
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.4s ease-out;
+    }
+
+    .poeme:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .rojofuerte {
+      color: #c00;
+      font-weight: bold;
+    }
+
+    .rojoclaro {
+      color: #bf2729;
+      font-weight: bold;
+    }
+
+  </style>
+</head>
+<body>
+    <p> Figure 70 Henri Chopin</p>
+    <div class="poeme">
+    Soul Soul Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul  Soul Soul Soul Soul Soul<br>
+    Soul Soul So  l Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul Soul Soul Soul Soul Soul<br>
+    Soul Soul <span class="rojofuerte">b r û l e !</span> Soul Soul Soul Soul Soul<br><br>
+    <span class="rojoclaro">feu feu feu feu feu feu feu feu feu feu feu feu feu feu</span><br>
+    <span class="rojoclaro">feu feu feu feu feu feu feu feu feu feu feu feu feu feu feu</span>
+    </div>
+</body>
+</html>
