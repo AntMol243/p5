@@ -30,37 +30,23 @@
     }
 
     .poeme {
-      position: relative;
       text-align: center;
       line-height: 1.4em;
       font-size: 15px;
       letter-spacing: 1px;
       cursor: pointer;
-      transition: transform 0.3s ease, filter 0.3s ease;
     }
 
-    .poeme:hover {
-      transform: translateY(-5px) scale(1.02);
-      filter: brightness(1.2);
+    .poeme span {
+      display: inline-block;
+      transition: transform 0.4s ease;
     }
 
-    .poeme::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(90deg, #a90a14, #ea6053, #a90a14);
-      transform: scaleX(0);
-      transform-origin: bottom right;
-      transition: transform 0.4s ease-out;
-    }
-
-    .poeme:hover::before {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+    .movimiento1:hover { transform: translate(-5px, -3px) rotate(-5deg) scale(1.05); }
+    .movimiento2:hover { transform: translate(3px, -6px) rotate(8deg) scale(0.95); }
+    .movimiento3:hover { transform: translate(-4px, 4px) rotate(3deg) scale(1.1); }
+    .movimiento4:hover { transform: translate(6px, 2px) rotate(-8deg) scale(0.9); }
+    .movimiento5:hover { transform: translate(-2px, -5px) rotate(5deg) scale(1.02); }
 
     .rojofuerte {
       color: #c00;
@@ -71,32 +57,32 @@
       color: #bf2729;
       font-weight: bold;
     }
-
   </style>
 </head>
 <body>
-    <p> Figure 70 Henri Chopin</p>
-    <div class="poeme">
-    Soul Soul Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul  Soul Soul Soul Soul Soul<br>
-    Soul Soul So  l Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul Soul Soul Soul Soul Soul<br>
-    Soul Soul <span class="rojofuerte">b r û l e !</span> Soul Soul Soul Soul Soul<br><br>
+  <p>Figure 70 Henri Chopin</p>
+
+  <div class="poeme">
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span><br>
+    <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span> <span class="movimiento2">Soul</span> <span class="movimiento3">Soul</span> <span class="movimiento4">Soul</span> <span class="movimiento5">Soul</span> <span class="movimiento1">Soul</span><br>
+    <span class="rojofuerte">Soul b r û l e !</span> Soul Soul Soul Soul Soul<br><br>
     <span class="rojoclaro">feu feu feu feu feu feu feu feu feu feu feu feu feu feu</span><br>
     <span class="rojoclaro">feu feu feu feu feu feu feu feu feu feu feu feu feu feu feu</span>
-    </div>
+  </div>
 </body>
 </html>
